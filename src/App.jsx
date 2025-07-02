@@ -211,7 +211,7 @@ import RoadmapPage from '@/components/views/RoadmapPage';
 import ScheduleListPage from '@/components/admin/ScheduleListPage';
 import ResetPasswordPage from '@/components/views/ResetPasswordPage';
 import UpdatePasswordPage from '@/components/views/UpdatePasswordPage';
-import EmailVerification from './components/EmailVerification';
+import EmailVerificationPage from '@/components/EmailVerification';
 
 const CosmicFlowBackground = () => {
   const particles = Array.from({ length: 40 });
@@ -318,6 +318,7 @@ const AppLayoutRoutes = () => (
         <Route path="/services/content-generation" element={<ContentGenerationPage />} />
         <Route path="/services/consultation" element={<ConsultationPage />} />
         <Route path="/reset-password/:token" element={<ResetPasswordPage />} />
+        <Route path="/email-verification" element={<EmailVerificationPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </main>
