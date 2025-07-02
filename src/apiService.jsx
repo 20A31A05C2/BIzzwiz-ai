@@ -276,7 +276,7 @@
 
 
 
-const BaseUrl = "https://app.bizzwiz.ai/api";
+const BaseUrl = "/api";
 
 // Flag to prevent multiple redirects
 let isRedirecting = false;
